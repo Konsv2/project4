@@ -12,7 +12,7 @@ random_item = random.choice(items)
 
 def project_index(request):
     
-    items = list(Product.objects.all())
+    items = list(Project.objects.all())
 
     # change 3 to how many random items you want
     random_items = random.sample(items, 6)
