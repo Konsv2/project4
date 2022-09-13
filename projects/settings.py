@@ -41,6 +41,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'projects',
+    'django_filters',
+    "django.contrib.postgres",
 ]
 
 MIDDLEWARE = [
@@ -78,13 +80,21 @@ WSGI_APPLICATION = 'projects.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
+#DATABASES = {
+#    'default': {
+#        'ENGINE': 'django.db.backends.sqlite3',
+#        'NAME': BASE_DIR / 'db.sqlite3',
+#    }
+#}
+
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'd95taepeu0s9sq', 
         'USER': 'awqgbubpchvnpm', 
         'PASSWORD': 'c1d93f193476d537610c147acb24b04125656a03c745570e1b5a3b326548b80a',
-        'HOST': 'ec2-34-247-72-29.eu-west-1.compute.amazonaws.com', 
+        'HOST': 'ec2-54-228-201-167.eu-west-1.compute.amazonaws.com', 
         'PORT': '5432',
     }
 }
